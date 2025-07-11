@@ -232,6 +232,7 @@ main {
   background-color: white;
   border-radius: 14px;
   padding: 70px 150px;
+  margin-bottom: 90px;
 }
 
 .signup-title {
@@ -256,9 +257,62 @@ main {
 
 /* ---------------------- end of the signup section ----------------------- */
 
+/* ---------------------- start of the get in touch section ----------------------- */
+
+.get-in-touch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 115px;
+  padding: 70px 0px;
+  margin-bottom: 14px;
+}
+
+.get-in-touch-title {
+  font-weight: 700;
+  font-size: 97px;
+}
+
+.get-in-touch-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.get-in-touch-form label {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.get-in-touch-form input[type="text"],
+.get-in-touch-form input[type="email"],
+.get-in-touch-form textarea {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 490px;
+  border: 1px solid rgba(214, 221, 237, 1);
+}
+
+.get-in-touch-form textarea {
+  resize: none;
+height: 160px;
+}
+
+.get-in-touch-form input[type="submit"] {
+  font-size: 20px;
+  padding: 20px 30px;
+}
+
+/* ---------------------- end of the get in touch section ----------------------- */
+
+
+
 hr {
   border: none;
-  border-top: 2.5px solid rgba(0, 0, 0, 0.1);
+  border-top: 3px solid rgba(0, 0, 0, 0.06);
 }
 
 /* || FOOTER */
