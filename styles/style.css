@@ -223,6 +223,39 @@ main {
 /* ---------------------------end of user reviews section ------------ */
 
 
+/* ---------------------- start of the signup section ----------------------- */
+.signup-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 14px;
+  padding: 70px 150px;
+}
+
+.signup-title {
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.signup-description {
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.btn-signup {
+  margin-bottom: 20px;
+}
+
+.signup-img {
+  border-radius: 48px;
+}
+
+
+/* ---------------------- end of the signup section ----------------------- */
+
 hr {
   border: none;
   border-top: 2.5px solid rgba(0, 0, 0, 0.1);
