@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* imported fonts */
 .font-raleway-normal {
   font-family: "Raleway", sans-serif;
@@ -19,6 +25,7 @@
   --BTN-BGCOLOR: #4e47ff;
   --TEXT-COLOR-LG-BLUE: #4e47ff;
   --TEXT-COLOR-LG-DARK: #252432;
+  --BG-COLOR-LIGHT: 
 
   /* width */
   --MAX-WIDTH: 1140px;
@@ -35,10 +42,16 @@
   border-radius: 10px;
 }
 
+/* || BODY */
+body {
+  background-color: rgba(245, 248, 255, 1);
+}
+
 /* || HEADER  */
 header {
   background-image: url(../Assets/Hero-bg.png);
-  height: 700px;
+  height: 650px;
+  padding-top: 50px;
 }
 
 /* || NAV */
@@ -52,7 +65,7 @@ nav {
 
 .nav-title {
   font-size: 34px;
-  font-weight: bold;
+  font-weight: 900;
   color: var(--TEXT-COLOR-LG-BLUE);
 }
 
@@ -70,14 +83,16 @@ nav {
   font-size: 65px;
   text-align: center;
   font-weight: bold;
+  margin-bottom: 40px;
 }
 
 /* || MAIN */
 main {
   max-width: 1140px;
-  margin: 120px auto;
+  margin: 120px auto 0;
 }
 
+/* ----------- action section --------- */
 .action-section {
   display: flex;
   justify-content: space-between;
@@ -89,17 +104,128 @@ main {
   color: var(--TEXT-COLOR-LG-DARK);
   font-weight: 700;
   font-size: 42px;
+  margin-bottom: 20px;
 }
 
 .action-description {
   color: hsl(244, 16, 17, 50);
   font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .action-image {
   width: 403px;
   height: 328px;
   border-radius: 48px;
+}
+/* ----------- end of action secton ------------- */
+
+/* -----------------  user stat section------------ */
+.user-stats-section {
+  background-color: #e5e7ff;
+  border-radius: 24px;
+  padding: 50px 140px;
+  margin-top: 120px;
+}
+
+.user-stats-title {
+  color: var(--TEXT-COLOR-LG-DARK);
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.user-stats {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.user-stat-data {
+  font-size: 80px;
+  color: var(--TEXT-COLOR-LG-BLUE);
+  font-weight: 700;
+  margin-top: 40px;
+}
+
+.user-stat-description {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+
+}
+
+/* --------------------------- end of user stat section ------------ */
+
+
+/* --------------------------- start of user reviews section ------------ */
+
+
+.user-reviews-section {
+  margin: 140px auto;
+}
+
+.user-reviews-section-title {
+  text-align: center;
+  color: var(--TEXT-COLOR-LG-DARK);
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.user-reviews {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.user-review {
+  background-color: white;
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.review-stars {
+  margin-bottom: 24px;
+}
+
+.review-title {
+  font-size: 24px;
+  color: #1e1e1e;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.review-description {
+  margin-bottom: 24px;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.reviewer-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.reviewer-name {
+  color: #757575;
+  font-weight: 600;
+}
+
+.review-date {
+  color: #b3b3b3;
+}
+
+
+/* ---------------------------end of user reviews section ------------ */
+
+
+hr {
+  border: none;
+  border-top: 2.5px solid rgba(0, 0, 0, 0.1);
 }
 
 /* || FOOTER */
@@ -108,8 +234,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 531px;
-  height: 221px;
+  width: 530px;
   margin: 100px auto;
 }
 
@@ -117,12 +242,13 @@ footer {
   font-size: 100px;
   color: var(--TEXT-COLOR-LG-BLUE);
   font-weight: 850;
-  margin-bottom: 0;
+  margin-bottom: 15px;
 }
 
 .footer-description {
   color: #8987a1;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .footer-links {
