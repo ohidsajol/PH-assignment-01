@@ -1,0 +1,137 @@
+/* imported fonts */
+.font-raleway-normal {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* || VARIABLES */
+:root {
+  /* colors */
+  --BTN-BGCOLOR: #4e47ff;
+  --TEXT-COLOR-LG-BLUE: #4e47ff;
+  --TEXT-COLOR-LG-DARK: #252432;
+
+  /* width */
+  --MAX-WIDTH: 1140px;
+}
+
+/* ||SHARED STYLES */
+.btn-primary {
+  background-color: var(--BTN-BGCOLOR);
+  color: white;
+  font-weight: bold;
+  padding: 12px 36px;
+
+  border: none;
+  border-radius: 10px;
+}
+
+/* || HEADER  */
+header {
+  background-image: url(../Assets/Hero-bg.png);
+  height: 700px;
+}
+
+/* || NAV */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 150px;
+}
+
+.nav-title {
+  font-size: 34px;
+  font-weight: bold;
+  color: var(--TEXT-COLOR-LG-BLUE);
+}
+
+/* || BANNER */
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 150px 260px;
+}
+
+.banner-title {
+  color: var(--TEXT-COLOR-LG-DARK);
+  font-size: 65px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* || MAIN */
+main {
+  max-width: 1140px;
+  margin: 120px auto;
+}
+
+.action-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 220px;
+}
+
+.action-title {
+  color: var(--TEXT-COLOR-LG-DARK);
+  font-weight: 700;
+  font-size: 42px;
+}
+
+.action-description {
+  color: hsl(244, 16, 17, 50);
+  font-size: 24px;
+}
+
+.action-image {
+  width: 403px;
+  height: 328px;
+  border-radius: 48px;
+}
+
+/* || FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 531px;
+  height: 221px;
+  margin: 100px auto;
+}
+
+.footer-title {
+  font-size: 100px;
+  color: var(--TEXT-COLOR-LG-BLUE);
+  font-weight: 850;
+  margin-bottom: 0;
+}
+
+.footer-description {
+  color: #8987a1;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 48px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #8987a1;
+}
